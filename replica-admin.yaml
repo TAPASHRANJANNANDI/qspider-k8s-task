@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: admin
+  labels:
+    app: admin
+    
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchExpressions:
+      - key: env
+        operator: In
+        values:
+          - frontend
+          - backend 
+  template:
+    metadata:
+      labels:
+        env: frontend
+    spec:
+      containers:
+      - name: daynight-admin
+        image: tapashranjannandi/daynight-admin:latest
+        ports: 
+          - containerPort: 80
+      

@@ -1,0 +1,28 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: nginx
+  labels:
+    app: nginx
+    
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchExpressions: 
+      - key: env
+        operator: NotIn
+        values: 
+          - tomcat
+          - apache
+  template:
+    metadata:
+      labels:
+        env: nginx
+    spec:
+      containers:
+      - name: nginx
+        image: nginx
+        ports: 
+          - containerPort: 80
+      

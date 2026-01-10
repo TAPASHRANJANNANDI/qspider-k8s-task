@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: chain-summit
+  labels:
+    app: chain-summit
+    
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchExpressions: 
+      - key: env
+        operator: DoesNotExist
+  template:
+    metadata:
+      labels:
+        sample: chain
+    spec:
+      containers:
+      - name: chain-summit
+        image: tapashranjannandi/chain-submit:latest
+        ports: 
+          - containerPort: 80
+      

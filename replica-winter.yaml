@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: winter-gallary
+  labels:
+    app: winter-gallary
+    
+spec:
+  # modify replicas according to your case
+  replicas: 3
+  selector:
+    matchExpressions: 
+      - key: env
+        operator: Exists
+   
+  template:
+    metadata:
+      labels:
+        env: winter-gallary
+    spec:
+      containers:
+      - name: winter-gallary
+        image: tapashranjannandi/winter-galary:latest
+        ports: 
+          - containerPort: 80
+      
