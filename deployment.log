@@ -1,0 +1,87 @@
+deployment.apps/nginx-deployment created
+NAME                               READY   STATUS              RESTARTS   AGE
+admin-6nhdz                        1/1     Running             0          54s
+admin-t9rx9                        1/1     Running             0          54s
+admin-wtfx6                        1/1     Running             0          54s
+chain-summit-b9c78                 1/1     Running             0          53s
+chain-summit-mqlg5                 1/1     Running             0          54s
+chain-summit-r9z4v                 1/1     Running             0          54s
+nginx-deployment-bf744486c-8cl86   0/1     ContainerCreating   0          1s
+nginx-deployment-bf744486c-j4cct   0/1     ContainerCreating   0          1s
+nginx-deployment-bf744486c-xxr8m   0/1     ContainerCreating   0          1s
+winter-gallary-6hghn               1/1     Running             0          53s
+winter-gallary-cptc2               1/1     Running             0          53s
+winter-gallary-gzrmh               1/1     Running             0          54s
+nginx-deployment-bf744486c-8cl86   1/1     Running             0          2s
+nginx-deployment-bf744486c-xxr8m   1/1     Running             0          2s
+nginx-deployment-bf744486c-j4cct   1/1     Running             0          2s
+
+Forwarding from 127.0.0.1:1125 -> 80
+Forwarding from [::1]:1125 -> 80
+Handling connection for 1125
+Handling connection for 1125
+Handling connection for 1125
+Handling connection for 1125
+Forwarding from 127.0.0.1:1125 -> 80
+Forwarding from [::1]:1125 -> 80
+Handling connection for 1125
+Handling connection for 1125
+
+NAME                               READY   STATUS             RESTARTS   AGE
+admin-6nhdz                        1/1     Running            0          6m58s
+admin-t9rx9                        1/1     Running            0          6m58s
+admin-wtfx6                        1/1     Running            0          6m58s
+chain-summit-b9c78                 1/1     Running            0          6m57s
+chain-summit-mqlg5                 1/1     Running            0          6m58s
+chain-summit-r9z4v                 1/1     Running            0          6m58s
+nginx-deployment-8f7c4f685-c77zb   0/1     ImagePullBackOff   0          101s
+nginx-deployment-bf744486c-8cl86   1/1     Running            0          6m5s
+nginx-deployment-bf744486c-j4cct   1/1     Running            0          6m5s
+nginx-deployment-bf744486c-xxr8m   1/1     Running            0          6m5s
+winter-gallary-6hghn               1/1     Running            0          6m57s
+winter-gallary-cptc2               1/1     Running            0          6m57s
+winter-gallary-gzrmh               1/1     Running            0          6m58s
+
+deployment.apps/nginx-deployment image updated
+NAME                                READY   STATUS             RESTARTS   AGE
+admin-6nhdz                         1/1     Running            0          9m30s
+admin-t9rx9                         1/1     Running            0          9m30s
+admin-wtfx6                         1/1     Running            0          9m30s
+chain-summit-b9c78                  1/1     Running            0          9m29s
+chain-summit-mqlg5                  1/1     Running            0          9m30s
+chain-summit-r9z4v                  1/1     Running            0          9m30s
+nginx-deployment-7b9f4dc94c-wg26x   0/1     InvalidImageName   0          8s
+nginx-deployment-bf744486c-8cl86    1/1     Running            0          8m37s
+nginx-deployment-bf744486c-j4cct    1/1     Running            0          8m37s
+nginx-deployment-bf744486c-xxr8m    1/1     Running            0          8m37s
+winter-gallary-6hghn                1/1     Running            0          9m29s
+winter-gallary-cptc2                1/1     Running            0          9m29s
+winter-gallary-gzrmh                1/1     Running            0          9m30s
+deployment.apps/nginx-deployment image updated
+NAME                                READY   STATUS              RESTARTS   AGE
+admin-6nhdz                         1/1     Running             0          10m
+admin-t9rx9                         1/1     Running             0          10m
+admin-wtfx6                         1/1     Running             0          10m
+chain-summit-b9c78                  1/1     Running             0          10m
+chain-summit-mqlg5                  1/1     Running             0          10m
+chain-summit-r9z4v                  1/1     Running             0          10m
+nginx-deployment-5f77858959-mqqbp   0/1     ContainerCreating   0          3s
+nginx-deployment-bf744486c-8cl86    1/1     Running             0          9m11s
+nginx-deployment-bf744486c-j4cct    1/1     Running             0          9m11s
+nginx-deployment-bf744486c-xxr8m    1/1     Running             0          9m11s
+winter-gallary-6hghn                1/1     Running             0          10m
+winter-gallary-cptc2                1/1     Running             0          10m
+winter-gallary-gzrmh                1/1     Running             0          10m
+NAME                                READY   STATUS    RESTARTS   AGE
+admin-6nhdz                         1/1     Running   0          10m
+admin-t9rx9                         1/1     Running   0          10m
+admin-wtfx6                         1/1     Running   0          10m
+chain-summit-b9c78                  1/1     Running   0          10m
+chain-summit-mqlg5                  1/1     Running   0          10m
+chain-summit-r9z4v                  1/1     Running   0          10m
+nginx-deployment-5f77858959-5d9lw   1/1     Running   0          15s
+nginx-deployment-5f77858959-gjc7q   1/1     Running   0          17s
+nginx-deployment-5f77858959-mqqbp   1/1     Running   0          36s
+winter-gallary-6hghn                1/1     Running   0          10m
+winter-gallary-cptc2                1/1     Running   0          10m
+winter-gallary-gzrmh                1/1     Running   0          10m
